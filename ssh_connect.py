@@ -6,8 +6,6 @@ import time
 import sys
 import re
 
-from paramiko.ssh_exception import AuthenticationException
-
 #asking user input file path and name.  
 user_file = input("\n[+] Enter user file path and name (e.g. D:\MyApps\myfile.txt): ")
 
@@ -32,6 +30,7 @@ else:
     print("\n[-] File {} does not exist :( Please check and try again.\n".format(cmd_file))
     sys.exit()
     
+#Creating 
 def ssh_connection(ip):
     
     global user_file
